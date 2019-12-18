@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8" />
+        <style>
+            /* header light gray bar */ 
+            h1 {
+                display: block;
+                background-color: lightgray;
+                text-align: center;
+            }
+
+            /* three gray sections in a horizontal row, with the middle section being lighter */
+            .rowContainer {
+                width: 100%;  
+            }
+
+                /* left gray section */
+                .leftContainer {
+                    float: left;
+                    width: 33%;
+                    background-color: gray;
+                    text-align: center;
+                }  
+
+                /* middle gray section */  
+                .middleContainer {
+                    float: left;
+                    width: 33%;
+                    background-color: lightgray;
+                    text-align: center;
+                }  
+
+                /* right gray section */ 
+                .rightContainer {
+                    float: left;
+                    width: 34%;
+                    background-color: gray;
+                    text-align: center;
+                }     
+
+            /* section that contains aside and div */ 
+            .mainContainer {
+                display: block;
+                height: 300px;
+                background-color: lightgray;
+                text-align: center;
+            }
+
+/* clearfix is commented out, not sure if it was changing anything the way i have it set.
+
+            .mainContainer::after {
+                content: " ";
+                display: block;
+                clear: both;
+            }
+*/
+
+            .mainHeader {
+                display: block;
+            }
+
+                 /* blue div bar */ 
+                 #blueBar {
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-top: 50px;
+                    display: block;
+                    width: 95%;
+                    height: 50px;
+                    background-color: lightskyblue;
+                }
+                
+                /* aside */
+                aside {
+                    position: fixed;
+                    bottom: 55%;
+                    right: 70%;
+                    display: block;
+                    width: 250px;
+                    height: 200px;
+                    background-color: white;
+
+                }  
+            
+            /* footer */ 
+            footer {
+                display: block;
+                height: 75px;
+                background-color: lightgray;
+                text-align: center;                
+            } 
+
+        </style>
+    </head>
+
+    <body>
+        <!-- header -->
+        <h1>title</h1>
+        <br>
+
+        <!-- three sections in a horizontal row -->
+        <div class="rowContainer">
+            <section class="leftContainer">
+                <h2>left section</h2>
+            </section>
+            <section class="middleContainer">
+                <h2>middle section</h2>
+            </section>
+            <section class="rightContainer">
+                <h2>right section</h2>
+            </section>
+        </div>
+        <br>
+
+        <!-- main section containing aside and div -->
+        <section class="mainContainer">
+            <h2 class="mainHeader">main section</h2>
+            <div id="blueBar">
+                <h3>blue div bar</h3>
+            </div>
+            <aside>
+                <h3>aside info</h3>
+            </aside>
+            
+        </section>
+        <br>
+        
+        <!-- footer -->
+        <footer>
+            <h3>footer info</h3>
+        </footer>
+        
+
+    </body>
+</html>
