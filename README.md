@@ -1,1 +1,1 @@
-# 11-css-positioned-activity
+# UCSD-CodingBootCamp 11-css-positioned-activity
